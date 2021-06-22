@@ -10,9 +10,10 @@ public class FirstTest {
 
     @Test
     public void firstTest() {
-//        String pathToRootProject = System.getProperty("user.dir");
-//        System.out.println( pathToRootProject);
-//        String pathToChromeDriver = pathToRootProject + "/chromedriver";
+        String pathToRootProject = System.getProperty("user.dir");
+        System.out.println(pathToRootProject);
+        String pathToChromeDriver = pathToRootProject + "/chromedriver";
+
         WebDriver webDriver = new ChromeDriver();
         webDriver.get("https://google.com");
 

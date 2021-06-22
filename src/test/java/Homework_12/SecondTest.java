@@ -13,17 +13,7 @@ public class SecondTest {
     public void secondTest() {
         WebDriverManager.firefoxdriver().setup();
         WebDriver webDriver = new FirefoxDriver();
-        webDriver.get("https://google.com");
-
-        By locatorGoogleSearch = By.cssSelector("input[title='Поиск']");
-        WebElement inputGoogleSearch = webDriver.findElement(locatorGoogleSearch);
-
-        inputGoogleSearch.sendKeys("i ua почта");
-        inputGoogleSearch.submit();
-
-        By iUALinkLocator=By.xpath("//h3[contains(text(),'I.UA — твоя почта')]");
-        WebElement iUALinkOpen = webDriver.findElement(iUALinkLocator);
-        iUALinkOpen.click();
+        webDriver.get("https://www.i.ua/");
 
         By loginLocator = By.cssSelector("input[name='login']");
         By passwordLocator = By.cssSelector("input[name='pass']");
