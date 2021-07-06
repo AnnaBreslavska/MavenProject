@@ -13,18 +13,18 @@ public class Task4 {
 
         WebDriver webDriver = new ChromeDriver();
         webDriver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         By managerLoginLocator = By.cssSelector("button[ng-click='manager()']");
         WebElement managerLogin = webDriver.findElement(managerLoginLocator);
         managerLogin.click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         //OpenCustomers
         By openCustomersLocator = By.cssSelector(".btn.btn-lg.tab[ng-class='btnClass3']");
         WebElement openCustomersLogin = webDriver.findElement(openCustomersLocator);
         openCustomersLogin.click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         //deleteHermoine
 

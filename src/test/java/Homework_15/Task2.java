@@ -13,19 +13,19 @@ public class Task2 {
 
         WebDriver webDriver = new ChromeDriver();
         webDriver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         By managerLoginLocator = By.cssSelector("button[ng-click='manager()']");
         WebElement managerLogin = webDriver.findElement(managerLoginLocator);
         managerLogin.click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         //AddCustomerButton
 
         By addCustomerLocator = By.cssSelector(".btn.btn-lg.tab[ng-class='btnClass1']");
         WebElement addCustomer = webDriver.findElement(addCustomerLocator);
         addCustomer.click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         //AddNewCustomerForm
 
@@ -44,18 +44,18 @@ public class Task2 {
         By addCustomerButtonLocator = By.cssSelector("button[type='submit']");
         WebElement addCustomerButton = webDriver.findElement(addCustomerButtonLocator);
         addCustomerButton.click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         webDriver.switchTo().alert().accept();
         webDriver.switchTo().defaultContent();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
 
         //OpenAccount
         By openAccountLocator = By.cssSelector(".btn.btn-lg.tab[ng-class='btnClass2']");
         WebElement openAccount = webDriver.findElement(openAccountLocator);
         openAccount.click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
 
         webDriver.manage().deleteAllCookies();
