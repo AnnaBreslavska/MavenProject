@@ -23,14 +23,14 @@ public class taskD {
             WebElement todayDeals = webDriver.findElement(By.xpath("//a[normalize-space()=\"Today's Deals\"]"));
             javascriptExecutor.executeScript("arguments[0].click()", todayDeals);
 
-            WebElement addItem = webDriver.findElement(By.cssSelector("a[id='100 b9195b90-announce']"));
-            javascriptExecutor.executeScript("arguments[0].click()", addItem);
+            WebElement addItemToCart = webDriver.findElement(By.xpath("(//button[contains(text(), 'Add to Cart')])"));
+            javascriptExecutor.executeScript("arguments[0].click()", addItemToCart);
 
-            WebElement addToCart = webDriver.findElement(By.cssSelector("#add-to-cart-button"));
-            javascriptExecutor.executeScript("arguments[0].click()", addToCart);
+            WebElement goTOCart = webDriver.findElement(By.xpath("//a[@id='nav-cart']"));
+            javascriptExecutor.executeScript("arguments[0].click()", goTOCart);
 
-            WebElement proceedButton = webDriver.findElement(By.cssSelector("#hlb-ptc-btn-native"));
-            javascriptExecutor.executeScript("arguments[0].click()", proceedButton);
+            WebElement proceed = webDriver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']"));
+            javascriptExecutor.executeScript("arguments[0].click()", proceed);
 
             webDriver.manage().deleteAllCookies();
             webDriver.quit();
