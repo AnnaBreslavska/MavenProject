@@ -9,17 +9,18 @@ import org.testng.annotations.Test;
 
 public class task3 {
     @Test
-    public void task2() {
+    public void task3() {
         WebDriverManager.chromedriver().setup();
         WebDriver webDriver = new ChromeDriver();
         webDriver.get("https://demoqa.com/");
 
         WebElement joinNow = webDriver.findElement(By.cssSelector("a[href='https://www.toolsqa.com/selenium-training/']"));
         joinNow.click();
-        webDriver.navigate().back();
-        webDriver.navigate().forward();
+        //webDriver.navigate().back();
+        //webDriver.navigate().forward();
 //        webDriver.navigate().to("https://demoqa.com/");
-//        webDriver.navigate().refresh();
+
+        webDriver.navigate().refresh();
         webDriver.close();
 
     }
