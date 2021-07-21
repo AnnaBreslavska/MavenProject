@@ -20,10 +20,7 @@ public class task5 {
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, 5);
         webDriver.get("https://demoqa.com/dynamic-properties");
 
-        //WebElement visible = webDriver.findElement(By.cssSelector("#visibleAfter"));
-        //webDriverWait.until(ExpectedConditions.visibilityOf(visible));
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#visibleAfter")));
-
         webDriver.quit();
     }
 }

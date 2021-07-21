@@ -16,7 +16,6 @@ public class task2 {
 
         WebElement newWindow = webDriver.findElement(By.cssSelector("#windowButton"));
         newWindow.click();
-        webDriver.navigate().forward();
         webDriver.close();
         webDriver.quit();
     }
