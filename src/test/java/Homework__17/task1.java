@@ -1,4 +1,4 @@
-package Homework_18;
+package Homework__17;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
